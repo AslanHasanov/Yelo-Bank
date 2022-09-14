@@ -69,6 +69,10 @@ a {
   background-color: #ffffff;
 }
 
+#second-bar .left a:first-child:hover::before {
+  width: 0%;
+}
+
 #second-bar .left a {
   margin-right: 2rem;
   font-size: 20px;
@@ -80,10 +84,11 @@ a {
 #second-bar .left a::before {
   content: '';
   position: absolute;
+  background-color: black;
   bottom: 0;
   left: 0;
+  height: 2px;
   width: 0%;
-  border-bottom: 2px solid;
   -webkit-transition: .7s;
   transition: .7s;
 }
@@ -178,5 +183,12 @@ a {
 
 #light .right .card-photo img {
   width: 100%;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+#light .right .card-photo:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */
